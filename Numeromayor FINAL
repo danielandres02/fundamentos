@@ -1,0 +1,31 @@
+// numeromayor.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+{
+	int numero1,numero2,numero3; //Declarar variable	
+	cout<<"Ingresar el numero 1: "<<endl;
+	cin>>numero1;
+	cout<<"Ingresar el numero 2: "<<endl;
+	cin>>numero2;
+	cout<<"Ingresar el numero 3: "<<endl;
+	cin>>numero3;
+	if (numero1>=numero2)
+		if(numero1>=numero3)
+			cout<<"El mayor es: "<<numero1<<endl;
+
+		else
+			cout<<"El mayor es: "<<numero3<<endl;
+	else
+		if(numero2>=numero3)
+			cout<<"El mayor es : "<<numero2<<endl;
+		else
+			cout<<"El mayor es: "<<numero3<<endl;
+	getch();
+	}
